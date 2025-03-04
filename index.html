@@ -54,7 +54,7 @@
             <h3>
                 Ramas en GIT
             </h3>
-            
+
             <ol>
                 <li>Se ejecuta git branch para ver las ramas que existen</li>
                 <li>Se ejecuta git branch nombreRama para crear una nueva rama</li>
@@ -62,6 +62,29 @@
                 <li>Se ejecuta git merge nombreRama para unir la rama actual con la rama que se indique</li>
                 <li>Se ejecuta git branch -d nombreRama para eliminar una rama</li>
             </ol>
+        </section>
+
+        <section>
+            <h3>
+                conflictos en GIT
+            </h3>
+            <ol>
+                <li>Se ejecuta git merge main para unir la rama actual con la rama main</li>
+                <li>En caso de que se haya editado el proyecto en la misma linea, en 2 diferentes ramas, al hacer el
+                    merge hay un conficlto, VSC lo puede arreglar por si mismo</li>
+                <li>
+                    Si VSC no puede arreglar el conflicto, se tiene que hacer manualmente, se tiene que abrir el archivo
+                    y buscar las lineas que tienen conflicto, se tiene que borrar las lineas que no se quieren y dejar
+                    las que si, se tiene que borrar las lineas que tienen <<<<<<<,=======y>>>>>>>, y dejar solo las
+                        lineas que se quieren.
+                </li>
+                <li>
+                    Se ejecuta git add . para agregar los cambios y luego se ejecuta git commit -m "Mensaje del commit"
+                    para dejar el comentario de lo que se edito
+                </li>
+                <li>Se ejecuta git push origin nombreRama para subir los cambios a la rama que se indique</li>
+            </ol>
+            
         </section>
 
     </main>
