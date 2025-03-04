@@ -127,10 +127,36 @@
         <section>
             <h2>GIT reflog</h2>
             <ol>
-                <li>Se ejecuta git reflog para ver un historial, permite visualizar los movimientos que se hicieron en el repositorio</li>
+                <li>Se ejecuta git reflog para ver un historial, permite visualizar los movimientos que se hicieron en
+                    el repositorio</li>
                 <li>Se busca el commit (hash)</li>
                 <li>Se copia el hash y se usa: "git reset --hard [hash]" y enter</li>
             </ol>
+        </section>
+
+        <section>
+            <h3>GIT TAG</h3>
+            <p>
+                Los tags son una forma de marcar un punto en la historia de un repositorio, se pueden usar para marcar
+                versiones, lanzamientos, etc.
+            </p>
+
+            <ol>
+                <li>Se ejecuta git tag para ver los tags que existen</li>
+                <li>Se ejecuta git tag v1.0 -m "Mensaje del tag" para crear un tag, se pueden usar de otras formas
+                    (android usa nombres de dulces, etc). En caso de no hacer cambios grandes, se puede usar el v1.0.1.
+                    En caso de agreagar fucniones mas avanzadas v1.1.1, en caso de un cambio mas grande se puede usar
+                    v2.1.1</li>
+                <li>Se ejecuta git push origin v1.0 para subir el tag a la rama principal</li>
+                <li>En caaso de querer elimiar un tag, se usa: git tag -d [nombre del tag]</li>
+            </ol>
+            <ul>
+                <li>Se pueden agregar tags a determinados commits</li>
+                <li>
+                    Se ejecuta git tag -a v1.0 [hash] -m "Mensaje del tag" para agregar un tag a un commit en especifico
+                </li>
+            </ul>
+
         </section>
 
     </main>
