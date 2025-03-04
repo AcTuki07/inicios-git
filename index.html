@@ -84,7 +84,53 @@
                 </li>
                 <li>Se ejecuta git push origin nombreRama para subir los cambios a la rama que se indique</li>
             </ol>
-            
+
+        </section>
+
+        <section>
+            <h3>Devolverse a los commits</h3>
+            <ol>
+                <li>Se ejecuta git log para ver los commits que se han hecho</li>
+                <li>Se ejecuta git checkout y se agrega el "hash", son las letras amarrilas sobre arriba de cada commit,
+                    identificador publico </li>
+                <li>Se ejecuta git checkout main para volver a la rama principal</li>
+        </section>
+
+        <section>
+            <h3>Reset</h3>
+            <ol>
+                <li> Se ejecuta git log para ver los commits que se han hecho </li>
+                <li> Se selecciona el commit al que se quiere volver usanado el "hash", son las letras amarrilas sobre
+                </li>
+                <li>Se usa "git reset [id del commit]", o bien, hay 3 id: "--mixed" "--soft" "--hard" cualquiera de
+                    ellos se puede usar, pero se usa antes del [id del commit (hash)]</li>
+                <li>Se ejecuta git push origin main para subir los cambios a la rama principal</li>
+            </ol>
+
+            <ul>
+                <h3>
+                    Tipos de reset
+                </h3>
+                <li>git reset --mixed [id del commit]: Se descartan los cambios, sin embargo no estan en el stage, tipo
+                    como si no se hubiese hecho ningun
+                    commit, despues de ejecutar el comando, se puede usar "git restore ." para descartar los cambios.
+                </li>
+                <li>git reset --soft [id del commit]: los cambios se encuentran dentro del stage, para borrar los
+                    cambios se tiene que usar "git restore --staged" para removerlo del stage</li>
+                <li>git reset --hard [id del commit]: se considera un "comando destructivo", una vez se ejecute elimina
+                    los cambios hasta el commit que usted decidio, es util cuando se esta seguro que los cambios se van
+                    a perder. Sin embargo, se pueden recuperar los cambios usando git reflog</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>GIT reflog</h2>
+            <ol>
+                <li>Se ejecuta git reflog para ver un historial, permite visualizar los movimientos que se hicieron en el repositorio</li>
+                <li>Se busca el commit (hash)</li>
+                <li>Se copia el hash y se usa: "git reset --hard [hash]" y enter</li>
+            </ol>
         </section>
 
     </main>
