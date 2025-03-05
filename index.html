@@ -164,13 +164,47 @@
         <section>
             <h2>Repositorio</h2>
             <p>
-                Un repositorio es un espacio donde se almacenan los archivos de un proyecto, se puede tener un repositorio
-                local y uno remoto. 
+                Un repositorio es un espacio donde se almacenan los archivos de un proyecto, se puede tener un
+                repositorio
+                local y uno remoto.
             </p>
             <ol>
                 <li>Se ejecuta git clone URL para clonar un repositorio</li>
                 <li>Se ejecuta git pull para traer los cambios del repositorio remoto al repositorio local</li>
                 <li>Se ejecuta git push para subir los cambios del repositorio local al repositorio remoto</li>
+        </section>
+
+        <section>
+            <h2>GIT FETCH</h2>
+            <p>
+                Git fetch es un comando que se usa para traer los cambios del repositorio remoto al repositorio local,
+                sin
+                embargo, no se mezclan los cambios, es decir, no se hace un merge.
+            </p>
+            <ol>
+                <li>Se ejecuta git fetch origin para traer los cambios del repositorio remoto al repositorio local, el
+                    fectch hace una comparacion de nuestros archivos locales con los del servidor, en caso de existir
+                    diferencia, nos pedira realizar un git pull </li>
+                <li>Se ejecuta git merge origin/main para mezclar los cambios del repositorio remoto al repositorio
+                    local</li>
+        </section>
+
+        <section>
+            <h2>git clone</h2>
+            <p>
+                Git clone es un comando que se usa para clonar un repositorio remoto a un repositorio local.
+            </p>
+            <ol>
+                <li>Se ejecuta git clone URL para clonar un repositorio remoto a un repositorio local</li>
+                <li>Se ejecuta git clone URL nombreCarpeta para clonar un repositorio remoto a un repositorio local con
+                    un nombre de carpeta diferente</li:>
+        </section>
+
+        <section>
+            <h2>GIT Alias</h2>
+            <p>
+                Son averviaturas
+            </p>
         </section>
 
     </main>
@@ -179,3 +213,5 @@
 </body>
 
 </html>
+
+<ol>
